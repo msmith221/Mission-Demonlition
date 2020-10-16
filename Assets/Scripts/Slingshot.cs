@@ -73,6 +73,8 @@ public class Slingshot : MonoBehaviour
             projectileRigidbody.velocity = -mouseDelta * velocityMult;
             FollowCam.POI = projectile;
             projectile = null;
+            MissionDemolition.shotFired();
+            ProjectileLine.S.poi = projectile;
         }
         //lootboxes
 
